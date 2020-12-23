@@ -63,6 +63,7 @@ export default function AllCountries() {
 
     const classes = useStyles();
      let count=1
+   
 
  
 
@@ -197,7 +198,7 @@ export default function AllCountries() {
                             elevation={5}>
                          
         <Typography variant="h1" component="h2">
-          
+          IND
         </Typography>
                                 <h3 className={classes.title}>
                                     CONFIRMED CASES  </h3>
@@ -215,6 +216,88 @@ export default function AllCountries() {
                     </Grid>    
                 )} }
  )}
+ {Object.keys(IndiaData).map((key, ind) => {
+                if (count===6){
+                    count++
+                return (
+                    <Grid  item xs={12} sm={3} key={ind}>
+                        <Paper 
+                            className={classes.paper} 
+                            elevation={5}>
+                         
+        <Typography variant="h1" component="h2">
+          ITA
+        </Typography>
+                                <h3 className={classes.title}>
+                                    CONFIRMED CASES  </h3>
+                                <h3>{IndiaData.confirmed.value} </h3>
+                                                  
+                                <h3 className={classes.title} style={{color:"green"}}>
+                                    RECOVERED CASES  </h3>
+                                <h3 style={{color:"green"}}>{IndiaData.recovered.value}</h3>
+                                <h3 className={classes.title} style={{color:"red"}}>
+                                    DEATH CASES  </h3>
+                                <h3 style={{color:"red"}}>{IndiaData.deaths.value}</h3>
+            
+                        </Paper>
+        
+                    </Grid>    
+                )} }
+ )}{Object.keys(IndiaData).map((key, ind) => {
+    if (count===7){
+        count++
+    return (
+        <Grid  item xs={12} sm={3} key={ind}>
+            <Paper 
+                className={classes.paper} 
+                elevation={5}>
+             
+<Typography variant="h1" component="h2">
+AUS
+</Typography>
+                    <h3 className={classes.title}>
+                        CONFIRMED CASES  </h3>
+                    <h3>{IndiaData.confirmed.value} </h3>
+                                      
+                    <h3 className={classes.title} style={{color:"green"}}>
+                        RECOVERED CASES  </h3>
+                    <h3 style={{color:"green"}}>{IndiaData.recovered.value}</h3>
+                    <h3 className={classes.title} style={{color:"red"}}>
+                        DEATH CASES  </h3>
+                    <h3 style={{color:"red"}}>{IndiaData.deaths.value}</h3>
+
+            </Paper>
+
+        </Grid>    
+    )} }
+)}{Object.keys(IndiaData).map((key, ind) => {
+    if (count===8){
+        count++
+    return (
+        <Grid  item xs={12} sm={3} key={ind}>
+            <Paper 
+                className={classes.paper} 
+                elevation={5}>
+             
+<Typography variant="h1" component="h2">
+BAN
+</Typography>
+                    <h3 className={classes.title}>
+                        CONFIRMED CASES  </h3>
+                    <h3>{IndiaData.confirmed.value} </h3>
+                                      
+                    <h3 className={classes.title} style={{color:"green"}}>
+                        RECOVERED CASES  </h3>
+                    <h3 style={{color:"green"}}>{IndiaData.recovered.value}</h3>
+                    <h3 className={classes.title} style={{color:"red"}}>
+                        DEATH CASES  </h3>
+                    <h3 style={{color:"red"}}>{IndiaData.deaths.value}</h3>
+
+            </Paper>
+
+        </Grid>    
+    )} }
+)}
  
  
  

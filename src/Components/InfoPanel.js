@@ -2,6 +2,7 @@ import React from 'react';
 import GlobalStats from './GlobalStats';
 import AllCountries from './AllCountries';
 import DailyStats from './dailyStats'
+import Barr from './bar'
 
 export default function InfoPanel({currentScreen}) {
 
